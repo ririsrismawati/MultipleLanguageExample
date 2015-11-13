@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selectLanguage">Pilih Bahasa</string>
+    <string name="english">Bahasa Inggris</string>
+    <string name="indonesia">Bahasa Indonesia</string>
+    <string name="choose">Pilih</string>
+</resources>
