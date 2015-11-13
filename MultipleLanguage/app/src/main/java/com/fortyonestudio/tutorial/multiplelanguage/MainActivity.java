@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this,
                         radioButton.getText(), Toast.LENGTH_SHORT).show();
-
+                        
+                //detect language by string
                 if(radioButton.getText().equals(getResources().getString(R.string.english))){
                     setLocale("en");
-
 
                 }else if (radioButton.getText().equals(getResources().getString(R.string.indonesia))){
                     setLocale("in");
@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void setLocale(String langId) {
         Locale locale = getLocaleFromPref(langId);
-//        Log.d("change language", "Set locale to " + locale);
         Configuration config = getBaseContext().getResources()
                 .getConfiguration();
         overwriteConfigurationLocale(config, locale);
